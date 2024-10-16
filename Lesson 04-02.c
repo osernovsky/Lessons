@@ -20,7 +20,7 @@ void print_table(int sizetable, int table[sizetable][sizetable]){
             if (table[i][j]<10){
                 printf("    %d",table[i][j]); // количество пробелов для выравнивания таблицы
             } else{
-                printf("  %d", table[i][j]); // уменьшаем на один пробел для двузначных
+                printf("   %d", table[i][j]); // уменьшаем на один пробел для двузначных
                 }
 
         }
@@ -43,7 +43,7 @@ int main(void){
     // Заполняем таблицу значениями
     initialize_table(size, table);
 
-    //Выводим таблицу
+    //Выводим таблицу на экран
     print_table(size, table);
     
     return 0;
